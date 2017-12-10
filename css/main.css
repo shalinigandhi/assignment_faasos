@@ -7,12 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #000; }
   .container .btn {
     width: 20px;
     height: 20px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     background: transparent;
     cursor: pointer; }
     .container .btn:active, .container .btn:focus {
@@ -23,8 +24,8 @@
       border-top: transparent;
       border-right: transparent; }
       .container .btn.btn-previous:active, .container .btn.btn-previous:focus {
-        border-bottom: 2px solid black;
-        border-left: 2px solid black;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
         border-top: transparent;
         border-right: transparent; }
     .container .btn.btn-next {
@@ -34,8 +35,8 @@
       .container .btn.btn-next:active, .container .btn.btn-next:focus {
         border-bottom: transparent;
         border-left: transparent;
-        border-top: 2px solid black;
-        border-right: 2px solid black; }
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff; }
   .container .list_wrapper {
     margin: 20px;
     max-width: 600px;
@@ -54,15 +55,14 @@
         height: 100%;
         transition: 0.2s;
         transform: translate(-60%, -50%);
-        opacity: 0;
-        text-align: center;  }
-      .container .list_wrapper .image_list .image_wrapper.active {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-      }
+        text-align: center;
+        opacity: 0; }
+        .container .list_wrapper .image_list .image_wrapper.active {
+          opacity: 1;
+          transform: translate(-50%, -50%); }
         .container .list_wrapper .image_list .image_wrapper img {
           max-width: 100%;
           max-height: 100%;
-          object-fit: cover;  }
+          object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */
